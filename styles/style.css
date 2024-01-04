@@ -1,1 +1,55 @@
-/* место для вашего кода */
+.header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center;
+	padding: 92px 24px 96px;
+	font-size: 18px;
+	font-weight: normal;
+	letter-spacing: 0.18px;
+}
+
+.content-section {
+	padding: 96px 24px 180px;
+}
+
+.footer {
+	padding: 180px 50px 88px;
+	font-size: 18px;
+	font-weight: normal;
+	letter-spacing: 0.18px;
+}
+
+.header__menu {
+}
+
+.header__menu-list {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	gap: 13px;
+	list-style-type: circle;
+	list-style-position: inside;
+}
+
+.header__menu-link {
+	display: inline-block;
+}
+
+.header__menu-item_active {
+}
+
+.header-logo {
+}
+
+.header__logo-image {
+	width: 148px;
+	height: 105px;
+}
+
+.header__contacts-list {
+	list-style-type: none;
+	font-style: normal;
+	width: 240px;
+	line-height: 135%;
+}
