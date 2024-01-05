@@ -12,8 +12,12 @@
 	<body>
 		<header class="header">
       <nav class="header__menu">
-        <a class="header__menu-item_activ">главная</a>
 				<ul class="header__menu-list">
+					<li class="header__menu-item_activ header__menu-item_no-bullit">
+						<a class="header__menu_link">
+							главная
+						</a>
+					</li>
 					<li class="header__menu-item">
 						<a 
             class="header__menu_link" 
@@ -55,7 +59,7 @@
 					</a>
 				</li>
 				<li class="header__contacts-item">
-					<span class="header__contacts-adress">
+					<span class="header__contacts-link address">
             наб. Принсенграхт 263- 265, Амстердам
           </span>
 				</li>
@@ -64,9 +68,35 @@
     </header>
 		<main>
       <div class="content-section">
-			<section class="cover"></section>
-			<section class="lots"></section>
-			<section class="about"></section>
+				<section class="cover">
+					<div class="overlay"></div>
+					<h1 class="cover__title">
+						<span class="cover__title-text aligned-text">
+							о<span class="letter-spacing-extended">но</span>
+						</span>
+						<span class="cover__title-text aligned-text-center">
+							те<span class="letter-spacing-extended">бе</span>
+						</span>
+						<span class="cover__title-text aligned-text-right">
+							<span class="letter-spacing-extended">н</span>ад<span class="no-letter-spacing">о</span>
+						</span>
+					</h1>
+					<div class="cover__description">
+						<p class="cover__description-text">
+							Аукцион вещей, в которые никто не верил
+						</p>
+						<button class="bet-button">
+							Сделать ставку
+						</button>
+					</div>
+
+				</section>
+				<section class="lots">
+
+				</section>
+				<section class="about">
+
+				</section>
       </div>
 		</main>
 		<footer class="footer"></footer>

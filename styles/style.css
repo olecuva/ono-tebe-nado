@@ -1,50 +1,47 @@
 .header {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-content: center;
-	padding: 92px 24px 96px;
+	display: grid;
+	grid-template-columns: 390px 1fr 148px 5fr 240px;
+	grid-template-rows: 105px;
+	justify-content: center;
+	justify-items: stretch;
+	align-items: center;
+	padding: 0 26px;
+	margin: 92px 24px 96px;
 	font-size: 18px;
-	font-weight: normal;
-	letter-spacing: 0.18px;
-}
-
-.content-section {
-	padding: 96px 24px 180px;
-}
-
-.footer {
-	padding: 180px 50px 88px;
-	font-size: 18px;
-	font-weight: normal;
 	letter-spacing: 0.18px;
 }
 
 .header__menu {
+	grid-column: 1/2;
+}
+
+.header__logo {
+	grid-column: 3/4;
+}
+
+.header__contacts {
+	grid-column: 5/6;
 }
 
 .header__menu-list {
 	display: flex;
 	justify-content: space-between;
-	align-content: center;
-	gap: 13px;
 	list-style-type: circle;
-	list-style-position: inside;
-}
-
-.header__menu-link {
-	display: inline-block;
+	text-underline-position: under;
 }
 
 .header__menu-item_active {
+	text-decoration: none;
+	letter-spacing: normal;
 }
 
-.header-logo {
+.header__menu-item_no-bullit {
+	list-style-type: none;
 }
 
-.header__logo-image {
-	width: 148px;
-	height: 105px;
+.header__logo {
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .header__contacts-list {
@@ -52,4 +49,98 @@
 	font-style: normal;
 	width: 240px;
 	line-height: 135%;
+	text-underline-position: under;
+}
+
+.address {
+	letter-spacing: normal;
+}
+
+.cover {
+	background-image: url(../images/cover.jpg);
+	background-size: cover;
+	margin: 0;
+	padding: 165px 50px 62px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.cover__title {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	font-size: 100px;
+	font-weight: 700;
+	line-height: 100%;
+	letter-spacing: 30px;
+	padding-bottom: 135px;
+}
+
+.cover__title-text {
+	display: block;
+}
+
+.aligned-text {
+	line-height: 115%;
+	letter-spacing: 30px;
+}
+
+.aligned-text-center {
+	text-align: center;
+}
+
+.aligned-text-right {
+	text-align: right;
+}
+
+.letter-spacing-extended {
+	letter-spacing: 60px;
+}
+
+.no-letter-spacing {
+	letter-spacing: 0;
+}
+
+.cover__description {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 28px;
+	font-size: 22px;
+	line-height: 28px;
+}
+
+.cover__description-text {
+	word-spacing: 18.5px;
+}
+
+.bet-button {
+	padding: 0;
+	width: 256px;
+  height: 51px;
+	border: 1px solid #FFF;
+	color: #FFF;
+	font-family: Raleway;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-transform: uppercase;
+	background-color: transparent;
+}
+
+.lots {
+	padding: 180px 24px 146px;
+}
+
+.footer {
+	margin: 180px 50px 88px;
+	font-size: 18px;
+	font-weight: normal;
+	letter-spacing: 0.18px;
+}
+
+.overlay {
+	background-color: black;
+	opacity: 0.6;
 }
