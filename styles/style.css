@@ -14,6 +14,8 @@
 
 .header__logo {
 	grid-column: 3/4;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .header .address {
@@ -40,11 +42,6 @@
 
 .header__menu-item {
 	padding-left: 4px;
-}
-
-.header__logo {
-	max-width: 100%;
-	max-height: 100%;
 }
 
 .address {
